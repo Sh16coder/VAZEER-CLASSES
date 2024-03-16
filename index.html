@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAZEER Classes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to VAZEER Classes</h1>
+        <nav>
+            <ul>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#playlists">Playlists</a></li>
+                <li><a href="#notes">Notes</a></li>
+                <li><a href="#newsletter">Subscribe</a></li> <!-- Added Newsletter link -->
+            </ul>
+        </nav>
+    </header>
+    <section id="faculty">
+        <h2>Meet Our Faculty</h2>
+        <div class="faculty-intro">
+            <!-- Faculty introduction content here -->
+            <img src="https://drive.google.com/uc?id=1AZqK7DP2ZSGDM_07vyaXejxl6sAi5sm5" alt="SHIVAM SONI SIR">
+            <p>Introducing our experienced faculty who are dedicated to providing quality education.</p>
+        </div>
+    </section>
+    <!-- Other sections (Videos, Playlists, Notes) -->
+    <section id="videos">
+        <h2>Latest Videos</h2>
+        <div class="video-list">
+            <!-- YouTube video embeds with titles here -->
+            <div class="video">
+                <h3>Complete electricity in one shot | Class-10th | all theory and basic concept</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MYHmN5QhaeM?si=3GueVYPEBBGtZzSj" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Ncert | class-10th | science -Electricity | exercise Q.9|</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/08pMxgH-zpk?si=ClHcx8dno_SgnWQy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- Repeat for other videos -->
+        </div>
+    </section>
+    <section id="playlists">
+        <h2>Playlists</h2>
+        <div class="playlist-list">
+            <!-- YouTube playlist embeds with titles here -->
+            <div class="playlist">
+                <h3>ELECTRICITY CLASS 10 FULL THEORY+QUESTIONS STEP BY STEP</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLSrxuxRGgFzTRBpWOWv2SBGxTjLPEOl9E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="playlist">
+                <h3>CLASS 12 ELECTROSTATIC</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLSrxuxRGgFzRiMfcUoMHkndTwcGBo9mSl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- Repeat for other playlists -->
+        </div>
+    </section>
+    <section id="notes">
+        <h2>Notes Corner</h2>
+        <div class="notes-content">
+            <!-- Google Drive content links here -->
+            <p>Access additional learning resources and study materials:</p>
+            <ul>
+                <li><a href="https://drive.google.com/drive/folders/DRIVE_FOLDER_ID_1">Subject Notes</a></li>
+                <li><a href="https://drive.google.com/drive/folders/DRIVE_FOLDER_ID_2">Practice Worksheets</a></li>
+                <li><a href="https://drive.google.com/drive/folders/DRIVE_FOLDER_ID_3">Exam Prep Guides</a></li>
+                <li><a href="https://drive.google.com/drive/folders/DRIVE_FOLDER_ID_4">Reference Books</a></li>
+                <li><a href="https://drive.google.com/drive/folders/DRIVE_FOLDER_ID_5">Assignment Solutions</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Newsletter Signup Section -->
+    <section id="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <div class="newsletter-form">
+            <form action="submit_newsletter.php" method="post"> <!-- Update action attribute with your form submission URL -->
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+    
+    <!-- Feedback Form Section -->
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <div class="feedback-form">
+            <form action="submit_feedback.php" method="post"> <!-- Update action attribute with your form submission URL -->
+                <textarea name="message" placeholder="Enter your feedback" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://instagram.com/vazeerclasses">Instagram</a>
+            <a href="https://youtube.com/vazeerclasses">YouTube</a>
+            <a href="https://twitter.com/vazeerclasses">Twitter</a>
+        </div>
+        <p>&copy; 2024 VAZEER Classes. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
