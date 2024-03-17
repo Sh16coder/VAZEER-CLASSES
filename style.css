@@ -52,12 +52,12 @@ nav ul li a {
 .main-content {
     padding: 20px;
 }
-
 /* Video container styles */
 .video-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow videos to wrap to the next line if needed */
+    justify-content: center; /* Center align videos horizontally */
+    gap: 20px; /* Add some space between videos */
 }
 
 .video {
@@ -65,6 +65,8 @@ nav ul li a {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    width: 300px; /* Set a fixed width for each video */
+    margin-bottom: 20px; /* Add some space below each video */
 }
 
 .video img {
@@ -84,7 +86,9 @@ nav ul li a {
 
 .video-content p {
     font-size: 14px;
+    color: #fff; /* Set text color to white */
 }
+
 
 /* Footer styles */
 footer {
