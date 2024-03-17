@@ -23,16 +23,3 @@ window.onload = function() {
             }
         });
     });
-    // Function to display the alert when the page is loaded
-window.onload = function() {
-    // Customize the message as needed
-    var message = "Join our Telegram group for doubts solving for free!";
-    // Replace "YOUR_TELEGRAM_GROUP_LINK" with the actual link to your Telegram group
-    var groupLink = "https://t.me/+9gMhBu4ceJwyN2M1";
-
-    // Display the alert
-    if (confirm(message)) {
-        window.open(groupLink, "_blank"); // Open the Telegram group link in a new tab
-    }
-};
-    
