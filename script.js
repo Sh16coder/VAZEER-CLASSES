@@ -23,36 +23,16 @@ window.onload = function() {
             }
         });
     });
+    // Function to display the alert when the page is loaded
+window.onload = function() {
+    // Customize the message as needed
+    var message = "Join our Telegram group for doubts solving for free!";
+    // Replace "YOUR_TELEGRAM_GROUP_LINK" with the actual link to your Telegram group
+    var groupLink = "https://t.me/+9gMhBu4ceJwyN2M1";
 
-    // Form validation and old alerts for newsletter signup form
-    const newsletterForm = document.getElementById('newsletter-form');
-    newsletterForm.addEventListener('submit', function(event) {
-        const emailInput = newsletterForm.querySelector('input[type="email"]');
-        const email = emailInput.value.trim();
-        if (!isValidEmail(email)) {
-            alert('Please enter a valid email address.');
-            event.preventDefault();
-        } else {
-            alert('Thank you for subscribing!');
-        }
-    });
-
-    // Form validation and old alerts for feedback form
-    const feedbackForm = document.getElementById('feedback-form');
-    feedbackForm.addEventListener('submit', function(event) {
-        const messageInput = feedbackForm.querySelector('textarea');
-        const message = messageInput.value.trim();
-        if (message === '') {
-            alert('Please enter your feedback.');
-            event.preventDefault();
-        } else {
-            alert('Thank you for your feedback!');
-        }
-    });
-
-    // Function to validate email format
-    function isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
+    // Display the alert
+    if (confirm(message)) {
+        window.open(groupLink, "_blank"); // Open the Telegram group link in a new tab
     }
 };
+    
