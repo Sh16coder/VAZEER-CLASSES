@@ -1,204 +1,95 @@
-/* General styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
-    color: #333;
+    box-sizing: border-box;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header, footer {
-    background-color: #333;
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
     color: #fff;
+}
+
+/* Header styles */
+header {
+    background-color: #ffcc00; /* Yellow */
+    color: #000; /* Black */
+    padding: 20px;
     text-align: center;
-    padding: 20px 0;
 }
+
 header h1 {
-    color: #fff; /* Change the text color to white */
-    font-size: 32px; /* Increase the font size */
+    font-size: 36px;
 }
 
-h2, h3 {
-    color: #333;
-}
-
-/* Navigation */
+/* Navigation styles */
 nav {
-    background-color: #444;
-    padding: 10px 0;
+    background-color: #333; /* Dark gray */
+    padding: 10px;
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 nav ul li {
     display: inline;
+    margin-right: 10px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
+    padding: 5px 10px;
     border-radius: 5px;
-    background-color: #007bff;
-    transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
-    background-color: #0056b3;
-}
-
-/* Sections */
-section {
-    background-color: #fff;
-    margin: 20px 0;
+/* Main content styles */
+.main-content {
     padding: 20px;
+}
+
+/* Video container styles */
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.video {
+    background-color: #333; /* Dark gray */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-/* Faculty section */
-#faculty {
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.faculty-intro img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.faculty-intro p {
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-/* Video and Playlist sections */
-.video-list, .playlist-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.video, .playlist {
-    margin: 10px;
-    flex-basis: calc(50% - 20px);
-}
-
-.video iframe, .playlist iframe {
+.video img {
     width: 100%;
-    height: 200px;
+    height: auto;
+    border-radius: 10px 10px 0 0;
 }
 
-/* Notes section */
-.notes-content {
-    text-align: center;
+.video-content {
+    padding: 20px;
 }
 
-.notes-content ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.notes-content ul li {
+.video-content h2 {
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
-.notes-content ul li a {
-    color: #007bff;
-    text-decoration: none;
+.video-content p {
+    font-size: 14px;
 }
 
-/* Social media links */
-.social-media a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background-color: #007bff;
-    transition: background-color 0.3s ease;
-}
-
-.social-media a:hover {
-    background-color: #0056b3;
-}
-
+/* Footer styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffcc00; /* Yellow */
+    color: #000; /* Black */
+    padding: 20px;
     text-align: center;
-    padding: 20px 0;
-}
-/* Newsletter Signup Section */
-#newsletter {
-    background-color: #fff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.newsletter-form {
-    margin-top: 20px;
-}
-
-.newsletter-form input[type="email"] {
-    width: 300px;
-    padding: 10px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.newsletter-form input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Feedback Form Section */
-#feedback {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.feedback-form {
-    margin-top: 20px;
-}
-
-.feedback-form textarea {
-    width: 100%;
-    height: 150px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.feedback-form input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
