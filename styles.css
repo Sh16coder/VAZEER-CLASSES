@@ -1,0 +1,95 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    background-color: #ffcc00; /* Yellow */
+    color: #000; /* Black */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333; /* Dark gray */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 20px;
+}
+
+/* Video container styles */
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.video {
+    background-color: #333; /* Dark gray */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.video img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.video-content {
+    padding: 20px;
+}
+
+.video-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.video-content p {
+    font-size: 14px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #ffcc00; /* Yellow */
+    color: #000; /* Black */
+    padding: 20px;
+    text-align: center;
+}
