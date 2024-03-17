@@ -74,18 +74,6 @@ section {
     padding: 50px 20px;
 }
 
-.SHIVAM-SONI-SIR img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.faculty-intro p {
-    font-size: 18px;
-    line-height: 1.5;
-}
 
 /* Video and Playlist sections */
 .video-list, .playlist-list {
